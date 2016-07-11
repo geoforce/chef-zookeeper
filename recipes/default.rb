@@ -22,6 +22,7 @@ include_recipe "runit"
 remote_file "/tmp/zookeeper-#{node[:zookeeper][:version]}.tar.gz" do
   source "http://mirrors.ibiblio.org/pub/mirrors/apache/hadoop/zookeeper/zookeeper-#{node[:zookeeper][:version]}/zookeeper-#{node[:zookeeper][:version]}.tar.gz"
   source "http://www.bizdirusa.com/mirrors/apache/zookeeper/zookeeper-#{node[:zookeeper][:version]}/zookeeper-#{node[:zookeeper][:version]}.tar.gz"
+  source "http://www.us.apache.org/dist/zookeeper/zookeeper-#{node[:zookeeper][:version]}/zookeeper-#{node[:zookeeper][:version]}.tar.gz"
   mode "0644"
 end
 
